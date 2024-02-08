@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=parseInt(prompt("enter value1:"))
+        var b=parseInt(prompt("enter value2:"))
 
+        if(a%b===0)
+        {
+            document.writeln("Welcome to JSTC<br>")
+            if(a<10)
+            { document.writeln("India<br>")
+                 document.writeln("a:",a,"b:",b,"<br>")
+            }
+            else if(a<10 && b%2==0)
+            {    document.writeln("Japan<br>")
+                document.writeln("a:",a,"b:",b,"<br>")
+            }
+            else if(a>10 && b%2==0){
+                document.writeln("Russia<br>")
+                document.writeln("a:",a,"b:",b,"<br>")
+            }
+            else{
+                document.writeln("Australia<br>")
+                document.writeln("a:",a,"b:",b,"<br>")
+            }
+        }
+
+        document.writeln("completed<br>")
+    </script>
+</body>
+</html>
