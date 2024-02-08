@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[]// empty list
+        while(true)// true because to run infinite times
+        {
+            var p=prompt("Enter the name")//input popup ke liye
+            a.push(p)//store data in last
+            b=confirm("Do you want to continue?")//only taken boolean data true or false
+            if(!b)
+            {
+                break
+            }
+        }
+        a.map((item)=>{document.writeln(item+"<br>")})
+    </script>
+</body>
+</html>
