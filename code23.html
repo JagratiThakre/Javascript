@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let st=["jagrati","ishika","fredy","purnima","uday","aditi"]
+
+var a= st[parseInt(Math.random()*st.length)]
+
+var b=parseInt(Math.random()*4)
+switch(b)
+{
+    case 0:
+        document.writeln("<h1>"+a+" is good in studies</h1>");
+        break;
+    case 1:
+        document.writeln("<h1>"+a+" is good in cooking</h1>");
+        break;
+    case 2:
+        document.writeln("<h1>"+a+" is good in music</h1>");
+        break;
+    case 3:
+        document.writeln("<h1>"+a+" is good in dance</h1>");
+        break;
+    default:
+    document.writeln("<h1>"+a+" is good in travelling</h1>");
+}
+
+    </script>
+</body>
+</html>
