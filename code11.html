@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>razorpay fetch data through api and display particular data in output</title>
+</head>
+<body>
+    <script>
+        var data= {
+  "entity": "collection",
+  "count": 2,
+  "items": [
+    {
+      "id": "pay_KbCFyQ0t9Lmi1n",
+      "entity": "payment",
+      "amount": 1000,
+      "currency": "INR",
+      "status": "authorized",
+      "order_id": null,
+      "invoice_id": null,
+      "international": false,
+      "method": "netbanking",
+      "amount_refunded": 0,
+      "refund_status": null,
+      "captured": false,
+      "description": "Test Transaction",
+      "card_id": null,
+      "bank": "IBKL",
+      "wallet": null,
+      "vpa": null,
+      "email": "gaurav.kumar@gmail.com",
+      "contact": "+919000090000",
+      "notes": {
+        "address": "Razorpay Corporate Office"
+      },
+      "fee": null,
+      "tax": null,
+      "error_code": null,
+      "error_description": null,
+      "error_source": null,
+      "error_step": null,
+      "error_reason": null,
+      "acquirer_data": {
+        "bank_transaction_id": "5733649"
+      },
+      "created_at": 1667397881
+    },
+    {
+      "id": "pay_KbCEDHh1IrU4RJ",
+      "entity": "payment",
+      "amount": 1000,
+      "currency": "INR",
+      "status": "authorized",
+      "order_id": null,
+      "invoice_id": null,
+      "international": false,
+      "method": "upi",
+      "amount_refunded": 0,
+      "refund_status": null,
+      "captured": false,
+      "description": "Test Transaction",
+      "card_id": null,
+      "bank": null,
+      "wallet": null,
+      "vpa": "gaurav.kumar@okhdfcbank",
+      "email": "gaurav.kumar@gmail.com",
+      "contact": "+919000090000",
+      "notes": {
+        "address": "Razorpay Corporate Office"
+      },
+      "fee": null,
+      "tax": null,
+      "error_code": null,
+      "error_description": null,
+      "error_source": null,
+      "error_step": null,
+      "error_reason": null,
+      "acquirer_data": {
+        "rrn": "230901495295",
+        "upi_transaction_id": "6935B87A72C2A7BC83FA927AA264AD53"
+      },
+      "created_at": 1667397781
+    }
+  ]
+}
+document.writeln(data+"<br>")
+document.writeln(data['items'][1]['email']+"<br>")
+document.writeln(data['items'][1]['amount']+"<br>")
+document.writeln(data['items'][1]['currency']+"<br>")
+document.writeln(data['items'][1]['upi']+"<br>")
+    </script>
+</body>
+</html>
