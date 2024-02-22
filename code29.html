@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="range" id="t1" min="0" max="5" step="1" onchange="maggi()">
+
+   <script>
+    //abhi tak ham sequential programming ka use kr rahe the
+        //procedure proggraming me koi bhi function ko kitni bhi bar call kr sakte hai
+        function maggi(){
+           var a=parseInt(document.getElementById("t1").value)
+           switch(a)
+           {
+             case 0:
+             document.body.style.backgroundColor="red"
+             break
+             case 1:
+             document.body.style.backgroundColor="blue"
+             break
+             case 2:
+             document.body.style.backgroundColor="green"
+             break
+             case 3:
+             document.body.style.backgroundColor="pink"
+             break
+             case 4:
+             document.body.style.backgroundColor="black"
+             break
+             default:
+           }
+        }
+   </script> 
+</body>
+</html>
