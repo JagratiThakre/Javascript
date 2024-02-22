@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Select your city:
+    <select id="t1" oninput="maggi()">
+        <option value="Bhopal">bhopal</option>
+        <option value="Indore">Indore</option>
+        <option value="Ujjain">Ujjain</option>
+    </select>
+    <div id="t2"></div>
+    <script>
+        function maggi(){
+            alert("MP")
+           let data=document.getElementById("t1").value
+        
+          switch(data) {
+             case "bhopal":
+             document.getElementById("t2").innerHTML="samosa"
+             break
+             case "indore":
+             document.getElementById("t2").innerHTML="indori poha"
+             break
+             case "Ujjain":
+             document.getElementById("t2").innerHTML="Bhang"
+             break
+             default:
+             document.getElementById("t2").innerHTML="sweets"
+
+           }
+        }
+    </script>
+</body>
+</html>
